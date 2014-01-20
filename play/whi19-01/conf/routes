@@ -1,0 +1,34 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index()
+
+#Mur
+GET		/wall						controllers.Application.listTweets(username = "Anon")
+#Mur d'un utilisateur
+GET		/wall/:username				controllers.Application.listTweets(username)
+
+#Poste un tweet
+POST	/wall						controllers.Application.submitTweet()
+
+#Gestion de l'inscription
+GET 	/inscription				controllers.Inscription.blank()
+POST	/inscription				controllers.Inscription.blank()
+POST    /signup                     controllers.Inscription.submit()
+
+#Gestion de la connexion
+GET 	/connexion					controllers.Connect.blank()
+POST	/connexion					controllers.Connect.blank()
+POST    /login                		controllers.Connect.login()
+
+#Déconnexion
+GET   /logoff						controllers.Connect.logoff()
+
+#Suppression de tweets
+GET /deletetweet					controllers.Application.delete(tweet_id: Long)
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

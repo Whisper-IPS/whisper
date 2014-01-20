@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Whisper JEE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="projet en jee">
+    <meta name="author" content="Mathieu Marion et Patrick">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+    <link href="bootstrap/bootstrap-responsive.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">Whisper</a>
+          <div class="nav-collapse collapse">
+
+            <ul class="nav">
+              <li><a href="play.html">Projet en PLAY!</a></li>
+              <li><a href="jee.html">Projet en JEE</a></li>
+
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>	
+    <div class="container">
+
+
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>Projet réalisé sous la plateforme JEE.</h1>
+     <p class="lead">Le projet a été réalisé en utilisant Java pour le coté serveur, en utilisant une architercture RESTful permise par Jersey, et l'outil Maven Apache. 
+     Le coté client a été réalisé avec le framework JavaScript AngularJS.</p>
+ 
+      </div>
+
+      <hr>
+
+            <div class="row-fluid marketing">
+        <div class="span6">
+          <h4>Technologies du Backend</h4>
+          <p>Java EE</p>
+          <p>Maven</p>
+          <p>Jersey</p>
+          <p>JPA</p>
+          <p>JUnit</p>
+          <p>RESTfuse</p>
+
+          <h4>Base de données</h4>
+          <p>MySql</p>
+        </div>
+        <div class="span6">
+          <h4>Technologies du Frontend</h4>
+          <p>Framework AngularJS</p>
+          <p>Framework Twitter Bootstrap</p>
+          <p>HTML 5</p>
+          <p>CSS 3</p>
+          <p>Javascript (jQuery)</p>
+          
+        </div>
+      </div>
+
+      <hr>
+     <div class="row-fluid marketing">
+        <div class="span12">
+			<h2>Le Back-end</h2>
+			<h4>REST</h4>
+          <p>L'application suit une architecture REST (REpresentational State Transfer), qui est basée sur le protocole HTTP et URI (pour l'adressege des ressources), 
+          et les types MIME (pour représenter les ressources). REST permet d'utiliser un 
+          protocole de communication sans état (stateless), selon une architecture client-serveur. REST est un style d'architecture pour réaliser des réseaux.
+           La communication entre le client et le serveur passe par du HTTP, ce qui simplifie grandement les échanges, en utilisant des méthodes telles que 
+           GET, POST, PUT, DELETE. Ces méthodes permettent de réaliser des opérations CRUD (Create, Read, Update, Delete). Cette architecture est notament utilisée 
+           par des entreprises telles que Google, Yahoo, Ebay et Amazon.  Comme REST n'est pas un standard, il n'existe 
+           donc pas de spécification REST pour construire des applications web. 
+          </p>
+          
+          <figure>
+			<img src="rest.png" alt="" />
+			<figcaption>Principe CRUD dans REST</figcaption>
+			</figure>
+			<br>
+			
+			<h4>Jersey</h4>
+          <p>Nous avons utilisé Jersey pour créer une application RESTfull, qui est un framework open source qui étends l'API JAX-RS (implémentation de référence de la 
+          JSR 311 et de la JSR 339). JAX-RS est un standard. De plus Jeersey fournit sa propre API pour simplifier le développement des services web RESTfull. Jersey fonctionne 
+          optimalement avec avec le serveur d'application JEE GlassFish, c'est pourquoi nous l'avons également utilisé pour ce projet.
+          L'application Whisper retourne du XML et du JSON.</p>
+          <br>
+          
+          <h4>Maven</h4>
+          <p>Nous avons également utilisé le logiciel libre Maven, qui permet de configurer la gestion du projet, via un format XML. Cela permet de téléchager les dépendances 
+          nécessaire au projet, d'automatiser les builds, de synchroniser les modules, etc. Ces configurations se trouvent dans le fichier pom.xml. </p>
+          <br>
+          
+          
+          <h4>Tests</h4>
+          <p>Deux types de tests ont étés mis en place, afin de tester les méthodes implémentées. Le premier type de tests sont les tests fonctionnels. Le second type 
+          de tests sont les tests d'intégration. Pour cela, différents outils ont été utilisés. C'est notament le cas de JUnit, qui est un framework pour réaliser des 
+          tests unitaires. L'extention de JUnit, RESTfuse, a été utilisée afin de mettre en place les tests d'intégration. Cette extention est spécialiste pour le REST.</p>
+          <br>
+          
+			<h2>Le Front-end</h2>
+			<h4>AngularJS</h4>
+          <p>La partie client a été mise en place via l'utilisation du framework libre et open source AngularJS. C'est un framework javascript MVC (Modèle-Vue-Contrôleur) 
+          développé par Google. AngularJS permet d'adapter et d'étendre le langage HTML pour mettre en place un contenu dynamique poussé. Cela est rendu possible via la mise 
+          en place d'un 'data-binding' qui est bi-directionnel. De ce fait, les vues et les modèles synchronisent de façon automatique. La logique métier et les manipulations du DOM 
+          sont découplés grâce à AngularJS. Le coté serveur et client sont totalement découplés, afin de permettre un développement parallèles des deux cotés et ainsi permettre une 
+          réutilisabilité de chacun des deux cotés. De plus, ce framework facilite les tâches à mettre en place dans le site. Un des gros avantages d'utiliser ce framework, est que cela 
+          allège les contraintes liées au back-end et permet de produire des applications plus légères. 
+
+          </p>
+          
+          <br>
+          <h4>Twitter Bootstrap</h4>
+          <p>En ce qui concerne le design du site, nous avons utilisé le kit CSS Twitter Bootstrap. C'est un framework de front-end qui repose sur un système de grilles et 
+          contient des templates déja prêtes à l'emploi, permetant de réaliser des sites web très esthétiques. </p>
+          
+        </div>
+      </div>
+      <hr>
+      
+      
+   <h2>Backlog</h2>
+<table class="table table-striped">
+   <thead>
+      <tr>
+         
+         <th>En tant que, </th>
+         <th>Je souhaite, </th>
+         <th>Afin de pouvoir, </th>
+         <th>Priorité</th>
+         <th>Etat de réalisation</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         
+         <td>Utilisateur</td>
+         <td>Voir tous les messages du site.</td>
+         <td>Savoir ce que disent les gens.</td>
+         <td>Très élevée</td>
+         <td>Réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>M’inscrire</td>
+         <td>Partager sur le site</td>
+         <td>Elevée</td>
+         <td>Réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Me connecter</td>
+         <td>Poster en étant reconnu</td>
+         <td>Moyenne</td>
+         <td>Réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Me déconnecter</td>
+         <td>Préserver mon identité</td>
+         <td>Moyenne</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Poster des messages et les enregistrer</td>
+         <td>D’interagir avec le site</td>
+         <td>Très élevée</td>
+         <td>Réalisé</td>
+      </tr>
+       <tr>
+         <td>Utilisateur</td>
+         <td>Modifier mes messages</td>
+         <td>Revenir sur ce que j'ai écrit</td>
+         <td>Très élevée</td>
+         <td>Réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Supprimer mes messages</td>
+         <td>Revenir sur mes écrits</td>
+         <td>Très élevée</td>
+         <td>Réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Afficher mon historique</td>
+         <td>Voir mes anciens messages classés chronologiquement</td>
+         <td>Elevée</td>
+         <td>Réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Modifier mon profil</td>
+         <td>Personnaliser mon compte</td>
+         <td>Très faible</td>
+         <td>Non réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Me géolocaliser</td>
+         <td>Ajouter une dimension géographique</td>
+         <td>Très faible</td>
+         <td>Non réalisé</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Rechercher un utilisateur</td>
+         <td>Visualiser ses messages</td>
+         <td>Faible</td>
+         <td>Réalisée</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Suivre un autre utilisateur (follower)</td>
+         <td>Suivre son actualité</td>
+         <td>Faible</td>
+         <td>Non réalisée</td>
+      </tr>
+      <tr>
+         <td>Utilisateur</td>
+         <td>Filtrer les messages</td>
+         <td>Retrouver le message d'interet rapidement</td>
+         <td>Moyenne</td>
+         <td>Réalisé</td>
+      </tr>
+   </tbody>
+</table>
+
+<hr>
+
+      <div class="footer">
+        <p>Mathieu Moreno - Marion Cardinale - Patrick Boussier - IPS - 2013/14</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+  </body>
+</html>

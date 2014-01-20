@@ -1,0 +1,27 @@
+<!-- page de création d'un nouveau message -->
+<div class="container">
+    <h1>Créer un nouveau whisper</h1>
+
+    <!-- formulaire de création -->
+    <form novalidate="novalidate" class="form-horizontal" name="myForm">
+
+        <div class="control-group">
+            <label class="control-label" for="inputWhisper">Whisper:</label>
+            <div class="controls">
+                <textarea name="whisper" id="inputWhisper" ng-model="whispers.whisper" placeholder="votre whisper" my-maxlength="140"  ng-trim="true" ng-minlength="1" rows="4" cols="50"></textarea>
+                <p>{{140 - whispers.whisper.length}} caractères restants.</p>
+                <!-- le champs de texte est limité à 140 caractètères et l'on décompte le nombre de caratères restants -->
+            </div>
+        </div>
+
+        <input type="hidden" ng-model="whispers.userId.userId" ng-init="whispers.userId.userId=userId">  
+        
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="createNewWhisper()" class="btn btn-small btn-primary">Valider</a>
+            </div>
+        </div>
+        
+    </form>
+    
+</div>

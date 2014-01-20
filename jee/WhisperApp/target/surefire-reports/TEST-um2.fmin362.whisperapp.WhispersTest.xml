@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="um2.fmin362.whisperapp.WhispersTest" time="0" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="catalina.base" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp"/>
+    <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
+    <property name="eclipselink.security.usedoprivileged" value="true"/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="os.name" value="Windows 8"/>
+    <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.7.0_40\jre\classes"/>
+    <property name="javax.security.jacc.PolicyConfigurationFactory.provider" value="com.sun.enterprise.security.jacc.provider.SimplePolicyConfigurationFactory"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.runtime.version" value="1.7.0_40-b43"/>
+    <property name="javax.net.ssl.keyStore" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp/config/keystore.jks"/>
+    <property name="user.name" value="marion"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="user.language" value="fr"/>
+    <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.7.0_40\jre\bin"/>
+    <property name="com.sun.aas.javaRoot" value="C:\Program Files (x86)\Java\jdk1.7.0_40\jre"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 7.4\java\maven\bin\m2.conf"/>
+    <property name="java.version" value="1.7.0_40"/>
+    <property name="com.sun.aas.instanceRootURI" value="file:/C:/Users/marion/AppData/Local/Temp/gfembed5662276498775725037tmp/"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="sun.arch.data.model" value="32"/>
+    <property name="javax.rmi.CORBA.UtilClass" value="com.sun.corba.ee.impl.javax.rmi.CORBA.Util"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\endorsed"/>
+    <property name="com.sun.aas.installRoot" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp"/>
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="user.country" value="FR"/>
+    <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.7.0_40\jre"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="os.version" value="6.2"/>
+    <property name="com.sun.aas.productRoot" value="C:\Users\marion\AppData\Local\Temp"/>
+    <property name="org.omg.CORBA.ORBSingletonClass" value="com.sun.corba.ee.impl.orb.ORBSingleton"/>
+    <property name="com.sun.aas.installRootURI" value="file:/C:/Users/marion/AppData/Local/Temp/gfembed5662276498775725037tmp/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.version" value="24.0-b56"/>
+    <property name="user.variant" value=""/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 7.4\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="com.sun.aas.hostName" value="Odin"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="user.script" value=""/>
+    <property name="user.home" value="C:\Users\marion"/>
+    <property name="com.sun.aas.instanceName" value="server"/>
+    <property name="com.sun.aas.configRoot" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp\config"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.7.0_40\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\Java\jdk1.7.0_40\bin;C:\play-2.1.4;C:\Program Files (x86)\MySQL\MySQL Utilities 1.3.4\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;.;;."/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="javax.rmi.CORBA.StubClass" value="com.sun.corba.ee.impl.javax.rmi.CORBA.StubDelegateImpl"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 7.4\java\maven"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 7.4\java\maven-nblib\netbeans-eventspy.jar install"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 7.4\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="org.glassfish.jms.InitializeOnDemand" value="true"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="catalina.home" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp"/>
+    <property name="javax.rmi.CORBA.PortableRemoteObjectClass" value="com.sun.corba.ee.impl.javax.rmi.PortableRemoteObject"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.io.tmpdir" value="C:\Users\marion\AppData\Local\Temp\"/>
+    <property name="com.sun.aas.imqLib" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp\lib\install\applications\jmsra"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="x86"/>
+    <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.7.0_40\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="user.dir" value="C:\Users\marion\Documents\NetBeansProjects\WhisperApp"/>
+    <property name="com.sun.aas.instanceRoot" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
+    <property name="glassfish.version" value="Undefined Product Name - define product and version info in config/branding  0.0.0  (build 0)"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="org.omg.CORBA.ORBClass" value="com.sun.corba.ee.impl.orb.ORBImpl"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="javax.net.ssl.trustStore" value="C:\Users\marion\AppData\Local\Temp\gfembed5662276498775725037tmp/config/cacerts.jks"/>
+  </properties>
+  <testcase name="testSetWhisper" classname="um2.fmin362.whisperapp.WhispersTest" time="0"/>
+  <testcase name="testGetWhisper" classname="um2.fmin362.whisperapp.WhispersTest" time="0"/>
+  <testcase name="testGetWhisperId" classname="um2.fmin362.whisperapp.WhispersTest" time="0"/>
+  <testcase name="testSetUserId" classname="um2.fmin362.whisperapp.WhispersTest" time="0"/>
+  <testcase name="testGetUserId" classname="um2.fmin362.whisperapp.WhispersTest" time="0"/>
+  <testcase name="testToString" classname="um2.fmin362.whisperapp.WhispersTest" time="0"/>
+</testsuite>

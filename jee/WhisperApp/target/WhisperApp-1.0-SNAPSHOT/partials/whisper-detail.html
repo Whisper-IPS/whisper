@@ -1,0 +1,24 @@
+<!-- page d'édition (modification) du message -->
+<div class="container">
+    <h1>Edition</h1>
+
+    <!-- formulaire d'édition -->
+    <form novalidate="novalidate" class="form-horizontal">
+        <div class="control-group">
+            <label class="control-label" for="inputWhisper">Whisper:</label>
+            <div class="controls">
+                <!--input type="text" id="inputWhisper" ng-model="whispers.whisper"/-->
+                <textarea name="whisper" id="inputWhisper" ng-model="whispers.whisper" my-maxlength="140"  ng-trim="true" ng-minlength="1" rows="4" cols="50"></textarea>
+                <p>{{140 - whispers.whisper.length}} caractères restants.</p>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <a ng-click="cancel()" class="btn btn-small">Annuler</a>
+                    <a ng-click="updateWhisper()" class="btn btn-small btn-primary">Mettre à jour le whisper</a>
+                </div>
+            </div>
+            
+    </form>
+    
+</div>

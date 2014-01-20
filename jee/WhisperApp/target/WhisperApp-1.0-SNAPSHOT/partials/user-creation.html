@@ -1,0 +1,43 @@
+<!-- ------------------------------ 
+ page d'inscription utilisateur 
+------------------------------ -->
+
+<div class="container">
+
+    <h1>S'inscrire</h1>
+    
+    <!-- formulaire d'inscription -->
+    <form novalidate="novalidate" class="form-horizontal">
+        
+        <div class="control-group">
+            <label class="control-label" for="inputUsername">Nom d'utilisateur:</label>
+            <div class="controls">
+                <input type="text" id="inputUsername" ng-model="users.username" placeholder="Votre nom"/>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label" for="inputPwd">Mot de passe:</label>
+            <div class="controls">
+                <input type="text" id="inputPwd" ng-model="users.pwd" placeholder="votre mot de passe"/>
+            </div>
+        </div>
+        
+        <input type="hidden"  ng-model="users.pwdhash" ng-init = "users.pwdhash = 'test'"/>
+        
+        <div class="control-group">
+            <label class="control-label" for="inputEmail">Email:</label>
+            <div class="controls">
+                <input type="text" id="inputEmail" ng-model="users.email" placeholder="votre email"/>
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <div class="controls">
+                <a ng-click="createNewUser()" class="btn btn-small btn-primary">Valider</a>
+            </div>
+        </div>
+        
+    </form>
+    
+</div>

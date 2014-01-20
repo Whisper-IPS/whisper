@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: um2.fmin362.whisperapp.WhispersTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in um2.fmin362.whisperapp.WhispersTest

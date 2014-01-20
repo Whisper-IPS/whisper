@@ -1,0 +1,56 @@
+<!-- page principale avec le tableau contenant tous les messages de tous les utilisateurs -->
+<div class="col-lg-12">
+    <h1>Tous les whispers</h1>
+
+    <!-- tableau affichant le message que l'on a séléctionné dans la liste -->
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h2 class="panel-title">Message séléctionné:</h2>
+        </div>
+        <div class="panel-body">
+            <h3><b>Utilisateur :</b></h3> <tt>{{selected.userId.username}}</tt>
+            <h3><b>Message :</b></h3> <tt>{{selected.whisper}}</tt>
+        </div>
+    </div>
+    <br>
+    <!-- filtre des messages selon l'utilisateur -->
+    Filtre : <input type="text" ng-model="userfilter"/>    
+    <br>
+    <br>  
+    <!-- trie des messages par utilisateur ou message selon l'ordre alphabétique -->
+    Trier par :
+    <select ng-model="triWhisper">
+        <option value="userId.username">Utilisateurs</option>
+        <option value="whisper">Messages</option>
+        <option value="WRegistration">Date</option>
+    </select>
+    <br><br>
+    <!-- tableeau contenant les messages -->
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead id="myTable">
+                <tr>
+                    <th>Auteur</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- création du tableau via une boucle -->
+                <!-- application du filtre, du trie et de la sélection de message -->
+                <!-- application de style sur les lignes paires/impaires -->
+                <tr ng-repeat="onewhisper in allwhispers| filter:userfilter | orderBy:triWhisper"
+                    ng-click="showSelectedElement(onewhisper)"
+                    ng-class-even="'even'"
+                    ng-class-odd="'odd'"
+                    >
+                    <!-- récupération des données, formalisme de type navigationnel, grâce au json/xml produit par le coté serveur -->
+                    <td>{{onewhisper.userId.username}}</td>
+                    <td>{{onewhisper.whisper}}</td>
+                    <td>{{onewhisper.WRegistration | date: 'Le MM/dd/yyyy à HH:mm'}}</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</div>

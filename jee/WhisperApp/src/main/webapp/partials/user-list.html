@@ -1,0 +1,40 @@
+<!--div class="col-md-1"></div-->
+<div class="col-lg-12">
+    <br>
+    <a ng-click="createNewWhisper()" class="btn btn-small btn-primary">Créer un nouveau whisper</a>
+    <br><br>
+    Trier par:
+    <select ng-model="triWall">
+        <option value="whisper">Messages</option>
+        <option value="WRegistration">Date</option>
+    </select>
+    <br>
+    <!-- filtre des messages selon le message -->
+    Filtre sur les whispers: <p><input type="text" ng-model="whisperfilter"/></p>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead id="myTable">
+                <tr>
+                    <th>Auteur</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="useronewhisper in userallwhispers| filter:whisperfilter |orderBy:triWall"
+                    ng-click="showSelectedElement(useronewhisper)"
+                    ng-class-even="'even'"
+                    ng-class-odd="'odd'"
+                    >
+                    <td>{{useronewhisper.userId.username}}</td>
+                    <td>{{useronewhisper.whisper}}</td>
+                    <td>{{useronewhisper.WRegistration | date: 'Le MM/dd/yyyy à HH:mm'}}</td>
+                    <td><a ng-click="editWhisper(useronewhisper.whisperId)" class="btn btn-small btn-primary">Editer</a></td>
+                    <td><a ng-click="deleteWhisper(useronewhisper.whisperId)" class="btn btn-small btn-danger">Supprimer</a></td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
